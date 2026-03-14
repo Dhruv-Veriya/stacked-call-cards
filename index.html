@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="actions">
+            <button class="addForm">+</button>
+            <button class="previous">↑</button>
+            <button class="next">↓</button>
+        </div>
+
+        <div class="colors">
+            <div class="dot black"></div>
+            <div class="dot purple"></div>
+            <div class="dot orange"></div>
+            <div class="dot teal"></div>
+        </div>
+
+        <div class="allCards"></div>
+
+    </div>
+
+
+<!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <form class="form">
+
+            <h2>New Call</h2>
+            <label> <span>Image URL</span>
+                <input required class="input" placeholder="https://example.com/photo.jpg">
+            </label>
+            <label><span>Full Name</span>
+                <input required class="input" placeholder="Enter Full Name">
+            </label>
+            <label><span>Home Town</span>
+                <input required class="input" placeholder="Enter Home Town">
+            </label>
+            <label><span>Purpose</span>
+                <input required class="input" placeholder="e.g., Quick Appointment Note">
+            </label>
+
+            <div class="category">
+
+                <label class="tag emergency">
+                    <input required type="radio" name="category" value="Emergency"> Emergency
+                </label>
+
+                <label class="tag important">
+                    <input required type="radio" name="category" value="Important"> Important
+                </label>
+
+                <label class="tag urgent">
+                    <input required type="radio" name="category" value="Urgent"> Urgent
+                </label>
+
+                <label class="tag norush">
+                    <input required type="radio" name="category" value="No Rush"> No Rush
+                </label>
+            </div>
+            <button class="create">Create Note</button>
+            <button class="close">Close</button>
+
+        </form>
+    </div>
+
+<!-- <script>
+
+function openModal(){
+document.getElementById("modal").classList.add("active")
+}
+
+function closeModal(){
+document.getElementById("modal").classList.remove("active")
+}
+
+</script> -->
+
+<script src="script.js"></script>
+</body>
+</html>
